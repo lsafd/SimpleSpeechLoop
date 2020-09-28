@@ -24,7 +24,7 @@ class Audio(object):
 
     FORMAT = pyaudio.paInt16
     # Network/VAD rate-space
-    RATE_PROCESS = 16000
+    RATE_PROCESS = 48000
     CHANNELS = 1
     BLOCKS_PER_SECOND = 50
 
