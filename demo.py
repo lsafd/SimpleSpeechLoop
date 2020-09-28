@@ -26,7 +26,7 @@ class Audio(object):
     # Network/VAD rate-space
     RATE_PROCESS = 48000
     CHANNELS = 1
-    BLOCKS_PER_SECOND = 50
+    BLOCKS_PER_SECOND = 150
 
     def __init__(self, callback=None, device=None, input_rate=RATE_PROCESS):
         def proxy_callback(in_data, frame_count, time_info, status):
