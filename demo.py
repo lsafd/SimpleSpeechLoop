@@ -24,9 +24,9 @@ class Audio(object):
 
     FORMAT = pyaudio.paInt16
     # Network/VAD rate-space
-    RATE_PROCESS = 48000
+    RATE_PROCESS = 16000
     CHANNELS = 1
-    BLOCKS_PER_SECOND = 150
+    BLOCKS_PER_SECOND = 50
 
     def __init__(self, callback=None, device=None, input_rate=RATE_PROCESS):
         def proxy_callback(in_data, frame_count, time_info, status):
