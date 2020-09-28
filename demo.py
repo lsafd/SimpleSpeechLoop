@@ -246,7 +246,7 @@ def echo_line(input_text, print_output = True):
             input_text = 'error with text length'
         else:
             say_text = input_text
-            url = 'http://0.0.0.0:5002/api/tts?text={}'.format(say_text)
+            url = 'http://mozillatts:5002/api/tts?text={}'.format(say_text)
             r = requests.get(url)
             with open(filename, 'wb') as f:
                 f.write(r.content)
